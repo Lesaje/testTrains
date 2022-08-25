@@ -3,10 +3,16 @@ package main
 import (
 	"fmt"
 	"testTrains/costSolver"
+	"testTrains/timeSolver"
 )
 
 func main() {
-	path, cost := costSolver.Solver()
+	path, time := timeSolver.Solver()
 	fmt.Println(path)
-	fmt.Println(cost)
+	fmt.Println(time)
+
+	path, price := costSolver.Solver()
+	fmt.Println(path)
+	fmt.Println(price)
+
 }
